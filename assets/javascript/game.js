@@ -14,7 +14,7 @@ yourNumber = 0;
 wins = 0;
 losses = 0;
 
-// Adds number generated for each color
+// Adds number generated for each color and compares the the value of "yourNumber" with the "randomNumber". If the values are equal, then player wins; if "yourNumber" is greather than "randomNumber", then player loses.
 $(".blueGemStatic").click(function() {
 	yourNumber = yourNumber + blue;
 	$("#yourNumber").text(yourNumber);
@@ -72,10 +72,11 @@ $(".orangeGemStatic").click(function() {
 });
 
 
-// Display the random generated number trying to be achieved
+// Display the random generated number trying to be reached
 $("#randomNumber").html(randomNumber);
 
 
+// Starting a new game after win or lose
 function reset() {
 	// Reset your number to zero
 	yourNumber = 0;
@@ -92,12 +93,14 @@ function reset() {
 	
 }
 
+// When player wins run function...
 function youWin() {
 	alert("You are a gem!");
 	wins++;
 	$("#wins").text(wins);
 }
 
+// When player loses run functio...
 function youLose() {
 	alert("You need some polishing...");
 	losses++;
@@ -105,7 +108,6 @@ function youLose() {
 }
 
 // jQuery controlling hover and click effects
-
 $(".blueGemStatic").hover(function(){
         $(this).attr("src", "assets/images/blueGemGif.gif");
         }, function(){
@@ -142,7 +144,6 @@ $(".orangeGemStatic").click(function(){
 		orangeClick.setAttribute('src', "assets/audio/gemAudio4.mp3"); orangeClick.play();
     });
 
-// Background Music
 $(".theme-button").on("click", function() {
         audioElement.play();
       });
@@ -151,6 +152,7 @@ $(".theme-button").on("click", function() {
         audioElement.pause();
       });
 
+// Background Music and other audio references
 var audioElement = document.createElement("audio");
       audioElement.setAttribute("src", "assets/audio/theme.mp3");
 
@@ -165,11 +167,4 @@ var redClick = document.createElement("audio");
 
 var orangeClick = document.createElement("audio");
       orangeClick.setAttribute("src", "assets/audio/gemAudio4.mp3");
-// $(".whiteGemStatic").hover(function(){
-//         $(this).attr("src", "assets/images/whiteGem.gif");
-//         }, function(){
-//         $(this).attr("src", "assets/images/whiteGemStatic.jpg");
-//     });
-
-
 });
