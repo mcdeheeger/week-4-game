@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gem Game</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+
+	<script src = "assets/javascript/game.js" type = "text/javascript"></script>
+
+	<link href = "https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+
+	<link rel = "stylesheet" type = "text/css" href = "assets/css/style.css">
+
+</head>
+<body>
+
+<div class = "container"> 
+	<div class = "row">
+
+		<div class = "col-md-12 text-center">
+			<h1>Welcome to the Gem Guessing Game!</h1>
+
+			<div class="text-center">
+    			<button class="btn btn-warning btn-xs theme-button"><span class="glyphicon glyphicon-music"></span> Play Theme!</button>
+    			<button class="btn btn-default btn-xs pause-button"><span class="glyphicon glyphicon-pause"></span> Pause Song</button>
+  			</div>
+		</div>
+
+	
+ 			<!-- NEED HELP WITH DROPDOWN -->
+			<!-- <div class = "dropdown">
+				<button class = "btn btn-primary dropdown-toggle" type = "button" data-toggle = "dropdown">How to play <span class = "caret"></span></button>
+				<ul class = "instructions dropdown-menu">
+					<p>1. You will be given a random number at the start of the game.</p>
+					<p>2. There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+					<p>3. You win the game by matching your total score to the random number</p>
+					<p>4. The value of each crystal is hidden from you until you click on it.</p>
+					<p>5. Each time when the game starts, the game will change the values of each crystal.</p>
+				</ul>
+			</div> -->
+
+		
+	
+	<div class = "row">
+
+		<div class = "col-md-3">
+			<ul class = "instructions">
+				<h3>Rules</h3>
+				<p>1. Look at the random number</p>
+				<p>2. Click crystals and add to your number</p>
+				<p>3. Win by reaching the random number!</p>
+				<p>93. MuahahaHAHAHA</p>
+			</ul>
+		</div>
+		<div class = "col-md-6">
+			<div class = "randomNumber col-md-6 text-center">
+				<h3>Random Number: </h3>
+			 	<span id = "randomNumber"></span>
+			</div>
+			<div class = "yourNumber col-md-6 text-center">
+				<h3>Your Number: </h3>
+			 	<span id = "yourNumber">0</span>
+			</div>
+			<div class = "col-md-12 text-center">
+				<div class= "gemsSmallContainer">
+					<img class = "blueGemStatic gem" src = "assets/images/blueGemStatic.png">
+					<img class = "greenGemStatic gem" src = "assets/images/greenGemStatic.png">
+					<img class = "redGemStatic gem" src = "assets/images/redGemStatic.png">
+					<img class = "orangeGemStatic gem" src = "assets/images/orangeGemStatic.png">
+					<!-- <img class = "whiteGemStatic gem" src = "assets/images/whiteGemStatic.jpg"> -->
+				</div>
+			</div>
+		</div>
+		<div class = "col-md-3 stats">
+			<h3>Wins: <span id = "wins"></span></h3>
+			<h3>Losses: <span id = "losses"></span></h3>
+		</div>
+	</div>
+
+	<div class = "row">
+
+		<div class = "col-md-6 col-md-offset-3 text-center gemsBigContainer">
+			
+		</div>
+	</div>
+
+	<div class = "row">
+		
+</div>
+
+</body>
+</html>
